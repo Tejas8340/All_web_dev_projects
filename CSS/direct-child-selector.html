@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>direct-child-selector</title>
+        <style>
+           body{
+               font-family: Arial, Helvetica, sans-serif;
+           }
+           #box{
+               border: 2px solid #000;
+               padding: 10px;
+               margin-top: 50px;
+           }
+           #box2{
+               border: 2px solid red;
+           }
+           #list li{
+               color: red;
+           }
+           #list > li{
+               color: green;
+           }
+           #box > p{
+                color: blue;
+           }
+        </style>
+    </head>
+    <body>
+        <h1>hello world</h1>
+        <ul id="list">
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.
+                <ul>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li> 
+                </ul>
+            </li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+        </ul>
+        <div id="box">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quis placeat aperiam provident adipisci vero alias ratione. Ea minus labore, veniam perferendis quidem, adipisci praesentium ad est explicabo, temporibus eligendi voluptatem doloremque hic cupiditate eveniet qui consectetur reprehenderit asperiores recusandae eius consequuntur. Ipsum expedita alias obcaecati similique? Voluptas maiores fuga iusto quam exercitationem nulla incidunt, saepe suscipit laudantium, tenetur illo quae accusantium similique nesciunt temporibus error vero ad enim sint laboriosam blanditiis commodi ipsam. Beatae architecto consequuntur perspiciatis quae illo, laudantium nihil, culpa iure laborum nobis aperiam, distinctio repudiandae eligendi inventore accusantium eveniet. Nihil aperiam placeat ullam perferendis excepturi alias.</p>
+            <div id="box2">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium est molestias ab numquam! Minus consequuntur veniam quis adipisci debitis dolorum, deserunt sequi quam nemo impedit possimus labore expedita laudantium? Consequuntur vel necessitatibus perspiciatis aperiam. Facilis deserunt nihil minima officia saepe quasi non perspiciatis quis molestiae. In quos distinctio voluptate veniam? Beatae assumenda delectus, ea quod voluptatem quam mollitia est officiis cum ducimus inventore adipisci nam corrupti? Reiciendis repellendus eos possimus quas aperiam, minima error impedit vitae earum odio ullam fugiat iure corporis suscipit. Cum laborum ad sit iure. At alias iure provident delectus vitae amet soluta nobis, autem ex eius.</p>
+            </div>
+        </div>
+    </body>
+</html>

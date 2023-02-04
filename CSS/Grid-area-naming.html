@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Grid-line-naming</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            h1{
+                padding: 0 0 0 40px ;
+                
+            }
+            .container{
+                background: #eee;
+                width: 720px;
+                margin: 45px 0 auto;
+
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: 120px 60px 100px 400px 50px;
+                grid-gap: 15px;
+
+                grid-template-areas: "header header header";
+            }
+            .header{
+                background: orangered;
+                grid-area: header;
+                
+            }
+            .menu{
+                background: yellowgreen;
+                grid-area: menu;
+                
+            }
+            .box1{
+                background:mediumpurple;
+                grid-area: box1; 
+            }
+            .box2{
+                background: hotpink;
+                grid-area: box2;
+            }
+            .sidebar{
+                background: royalblue;
+                grid-area: sidebar;
+               
+            }
+            .content{
+                background: #7DCEA0;
+                grid-area: content;
+                
+            }
+            .footer{
+                background: goldenrod;
+                grid-area: footer ;
+                
+            }
+            .items{color: #fff; font-size: 20px;}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="items header">header</div>
+            <div class="items menu">menu</div>
+            <div class="items box1">box1</div>
+            <div class="items box2">box2</div>
+            <div class="items sidebar">sidebar</div>
+            <div class="items content">content</div>
+            <div class="items footer">footer</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>grid-auto-fill and auto-fit</title>
+        <style>
+              body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            h1{
+                padding: 0 0 0 40px;
+            }
+            .container{
+                background: #eee;
+                width: 700px;
+                margin: 50px auto 0;
+                
+                display: grid;
+                grid-template-columns: repeat(auto-fill,100px   );
+                grid-template-rows: repeat(2,100px);
+                
+               
+            }
+            .item1{
+                 background: orangered;
+                 
+                
+             }
+             .item2{
+                 background: yellowgreen;
+             }
+             .item3{
+                 background: burlywood;
+                 
+                 
+             }
+             .item4{
+                 background: antiquewhite;
+                 
+             }
+             .item5{
+                 background: brown;
+             }
+             .item6{
+                 background: chartreuse;
+             }
+             
+        </style>
+    </head>
+    <body>
+        <div class="container"> 
+            <div class="item item1">First</div>
+            <div class="item item2">Second</div>
+            <div class="item item3">Third</div>
+            <div class="item item4">Four</div>
+            <div class="item item5">Five</div>
+            <div class="item item6">Six</div>
+            
+        </div>
+    </body>
+</html>

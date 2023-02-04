@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>composition or mixins</title>
+    </head>
+    <body>
+        <script>  
+       // COmposition or Mixin
+       var eating = {
+        eat: function (){
+            return "I can eat <br>";
+        }
+       };
+
+       var walking = {
+        walk: function (){
+            return "I can walk <br>";
+        }
+       };
+       var talking = {
+        talk: function (){
+            return "I can talk <br>";
+        }
+
+       };
+       var Rahul = Object.assign({}, eating, walking, talking);
+       var RoboCop = Object.assign({}, walking, talking);
+       document.write(Rahul.eat());
+       document.write(Rahul.walk());
+       document.write(Rahul.talk());
+
+       document.write(RoboCop.walk());
+       document.write(Robo Cop.talk());
+        </script>
+    </body>
+</html>

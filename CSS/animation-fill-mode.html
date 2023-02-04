@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>animation-fill-mode</title>
+        <style>
+            body{
+               font-family: Arial, Helvetica, sans-serif;
+            }
+            .box{
+                width: 150px;
+                height: 150px;
+                background: black;
+                margin-left: 20px;
+                animation: sample 2s 2s;
+                animation-fill-mode: forwards;
+               
+            }
+            .box:hover{
+                animation-play-state: paused;
+            }
+            @keyframes sample{
+                0%{ background: yellow; width: 250px; }
+                50%{ background: green; width: 350px; }
+                100%{ background: red; width: 450px; }
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="margin-bottom: 50px;">Hello World</h1>
+        <div class="box">AAAAAAAAAA</div> 
+    </body>
+</html>

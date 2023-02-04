@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Rest Parameter VS Argument Parameter</title>
+    </head>
+    <body>
+                <script>
+                    // rest parameter
+                   function restshow( a, ...args)
+                   {
+                   console.log("a:" + a);
+                   console.log(args);
+                 
+                }       
+                restshow(10,20,30,40,50);
+
+                // argument object
+                function show(a)
+                {
+                    console.log("a:" + a);
+                   console.log(arguments);
+                }
+                show(10,20,30,40,50)
+                </script>
+    </body> 
+</html>

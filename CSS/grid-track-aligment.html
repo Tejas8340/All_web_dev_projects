@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>grid-track-aligment</title>
+        <style>
+              body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            h1{
+                padding: 0 0 0 40px;
+            }
+            .container{
+                background: #eee;
+                width: 700px;
+                height: 700px;
+                margin: 45px auto   0;
+                
+                display: grid;
+                grid-template-columns: repeat(2, 150px);
+                grid-template-rows: repeat(2, 100px);
+                grid-gap: 15px;
+
+                grid-auto-rows: 50px;
+               
+                grid-auto-flow:  column dense;
+                justify-content: space-around;
+                align-content: center;
+                
+               
+            }
+            .item1{
+                 background: orangered;
+                 
+                
+             }
+             .item2{
+                 background: yellowgreen;
+             }
+             .item3{
+                 background: burlywood;
+                 grid-row: span 3;
+                 
+             }
+             .item4{
+                 background: antiquewhite;
+                 
+             }
+             .item5{
+                 background: brown;
+             }
+             .item6{
+                 background: chartreuse;
+                 grid-column: span 2;
+             }
+             .item7{
+                 background: darkblue;
+             }
+        </style>
+    </head>
+    <body>
+        <div class="container"> 
+            <div class="item item1">First</div>
+            <div class="item item2">Second</div>
+            <div class="item item3">Third</div>
+            <div class="item item4">Four</div>
+            <div class="item item5">Five</div>
+            <div class="item item6">Six</div>
+            <div class="item item7">Seven</div>
+        </div>
+    </body>
+</html>

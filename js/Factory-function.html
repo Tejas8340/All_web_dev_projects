@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title> Factory Function </title>
+    </head>
+    <body>
+        <script>
+       function mobile ( ) {
+        return{
+           model : "galaxy",
+           price : function(){ return "Price Rs. 3000";}
+        };
+       }
+       var samsung = mobile ( );
+       document.write( samsung.model + " " + samsung.price());
+        </script>
+    </body> 
+</html> 

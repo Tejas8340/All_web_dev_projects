@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <title>Constructor</title>
+</head>
+<body>
+    <script>
+        function Mobile(){
+            this.model = '3310';
+            this.price = function(){
+                document.write(this.model + "price Rs. 3000");
+            }
+
+        }
+        var samsung = new Mobile ();
+        var lg = new Mobile ();
+        samsung.price();
+        lg.price();
+    </script>
+</body>
+</html>

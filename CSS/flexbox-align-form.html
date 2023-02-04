@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>align-form</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            h1{
+                padding: 0 0 0 40px;
+            }
+            #wrapper{
+                background: #eee;
+                list-style: none;
+                margin: 50px;
+                padding: 20px;
+            }
+            #wrapper li{
+                display: flex;
+                justify-content: flex-end;
+                padding: 5px 0;
+            }
+            #wrapper li label{
+                flex: 1;
+            }
+            #wrapper li input{
+                flex: 3;
+            }
+            @media screen and (min-width: 1200px){
+                #wrapper li input{
+                flex: 3;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello World</h1>
+        <form action="">
+            <ul id="wrapper">
+                <li>
+                    <label for="">Name</label>
+                    <input type="text">
+                </li>
+                <li>
+                    <label for="">Class Name</label>
+                    <input type="text">
+                </li>
+                <li> <label for="">E-mail Address</label>
+                    <input type="text"></li>
+                <li>
+                    <button type="submit">Save</button>
+                </li>
+            </ul>
+        </form>
+    </body>
+</html>

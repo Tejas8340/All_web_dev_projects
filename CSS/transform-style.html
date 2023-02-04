@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>transform-style</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            div{
+                font-size: 20px;
+                text-align: center;
+                box-sizing: border-box;
+            }
+            .parent{
+                width: 400px;
+                height: 250px;
+                margin: 0 0 70px 100px;
+                perspective: 800px;
+                transform: rotateX(100deg);
+               transform-style: preserve-3d;
+            }
+            #box{
+                width: 400px;
+                height: 250px;
+                background: pink;
+                padding-top: 20px;
+                transform: rotateY(150deg);
+                transform-origin: bottom;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello World</h1>
+        <div class="parent">
+            <div id="box">AAAAAAAAA</div>
+        </div>
+    </body>
+</html>

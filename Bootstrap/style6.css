@@ -1,0 +1,14 @@
+.cbox{
+    border: 2px solid;
+}
+.arow{
+    border: 20px solid blue;
+}
+.adiv{
+    height: 50px;
+    background-color:red ;
+}
+.bdiv{
+    height: 50px;
+    background-color: green;
+}

@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>For-in-loop</title>
+    </head>
+    <body>
+        <script>
+         function Mobile(model_no){
+            this.model = model_no;
+            this.color = 'white';
+            this.ram = 
+            this.price = function(){
+                document.write(this.model + "price Rs.3000 <br>");
+            };
+         }  
+         var samsung = new Mobile ('galaxy');   
+         Var Nokia = new Mobile ('3310');
+         for ( var specs in nokia){
+            document.write(nokia[specs] + "<br>");
+         }
+        </script>
+    </body> 
+</html>

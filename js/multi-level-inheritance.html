@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>overriding</title>
+    </head>
+    <body>
+        <script>  
+        //super class
+        var Mobile = function(){
+          this.a = 10;
+        }
+        //prototype property of Mobile
+        Mobile.prototype.z = 30;
+
+        //Sub class
+        var Samsung = function(){
+            //It calls supeer class constructor and initialize property without this you can not access super class property using sub class object
+            Mobile.call(this);
+            this.b = 20;
+
+        }
+        var Galaxy = function(){
+            Samsung.call(this);
+            this.c = 100;
+        }
+        
+        //prototype Inheritance
+        Samsung.prototype = Object.create(Mobile.prototype);
+        Samsung.prototype.constructor = Samsung;
+
+        Galaxy.prototype = Object.create(Samsung.prototype);
+        Galaxy.prototype.constructor = Galaxy;
+
+        var m = new Mobile();
+        var s = new Samsung();
+        var g = new Galaxy();
+
+        document.write("Galaxy Object can access <br>");
+        document.write("Mobile A: " + g.a + "<br>");
+        document.write("Samsung B: " + g.b + "<br>");
+        document.write("Mobile.prototype Z: " + g.z + "<br>");
+        document.write("Galaxy C: " +  g.c + "<br> <br>");
+
+        document.write("Samsung Object can access <br>");
+        document.write("Mobile A: " + s.a + "<br>" );
+        document.write("Samsung B: " + s.b "<br>");
+        document.write("Mobile.prototype Z: " + s.z + "<br>");
+        document.write("Galaxy C: " +  s.c + "<br> <br>");
+        
+        document.write("Mobile Object can access <br>");
+        document.write("Mobile A: " + m.a + "<br>" );
+        document.write("Samsung B: " + m.b "<br>");
+        document.write("Mobile.prototype Z: " + m.z + "<br>");
+        document.write("Galaxy C: " + m.c + "<br> <br>");
+
+        </script>
+    </body>
+</html>

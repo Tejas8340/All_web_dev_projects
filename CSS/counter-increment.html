@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Counter-increment</title>
+        <style>
+            body{
+                font: 19/25px arial ; padding: 10px 0 0 20px;
+                counter-reset: my-counter 0;
+            }
+            h1{
+                font-size: 32px;margin-bottom: 35px; color: green;
+            }
+            h2::before{
+                content: "chapter" counter(my-counter,upper-alpha)" : ";
+                counter-increment: my-counter 1;
+                color: white;
+                background: red;
+                display: inline-block;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Hello WOrld</h1>
+
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores labore sed nobis mollitia necessitatibus nihil magnam nisi hic id, consequatur quam deleniti sapiente repellat perferendis, explicabo aut excepturi pariatur earum itaque quasi facilis reiciendis quis expedita magni. Nihil in autem quasi neque, optio ea dolor commodi, tempora tempore excepturi quod.</p>
+
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores labore sed nobis mollitia necessitatibus nihil magnam nisi hic id, consequatur quam deleniti sapiente repellat perferendis, explicabo aut excepturi pariatur earum itaque quasi facilis reiciendis quis expedita magni. Nihil in autem quasi neque, optio ea dolor commodi, tempora tempore excepturi quod.</p>
+
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores labore sed nobis mollitia necessitatibus nihil magnam nisi hic id, consequatur quam deleniti sapiente repellat perferendis, explicabo aut excepturi pariatur earum itaque quasi facilis reiciendis quis expedita magni. Nihil in autem quasi neque, optio ea dolor commodi, tempora tempore excepturi quod.</p>
+
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores labore sed nobis mollitia necessitatibus nihil magnam nisi hic id, consequatur quam deleniti sapiente repellat perferendis, explicabo aut excepturi pariatur earum itaque quasi facilis reiciendis quis expedita magni. Nihil in autem quasi neque, optio ea dolor commodi, tempora tempore excepturi quod.</p>
+    </body>
+</html>

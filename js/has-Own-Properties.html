@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title> hasOwnProperties </title>
+    </head>
+    <body>
+        <script>
+       function mobile(model_no) {
+        this.model = model_no;
+          this.color = 'red';
+       }
+       var samsung = new mobile("Galaxy");
+       var nokia = new mobile("3310");
+      if(nokia.hasOwnProperty('color')){
+        document.write("Available");
+      }else{
+            document.write("dosen't Exist")
+      }
+       
+    </script>
+    </body> 
+</html>   

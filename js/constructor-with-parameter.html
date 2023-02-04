@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title> Constructor with parameter </title>
+    </head>
+    <body>
+        <script>
+       function mobile(model_no) {
+        this.model = model_no;
+        this.price = function(){
+            document.write(this.model + "price Rs. 3000 <br>");
+        }
+       }
+       var samsung = new mobile("Galaxy");
+       var nokia = new mobile("3310");
+       samsung.price();
+       nokia.price();
+       
+    </script>
+    </body> 
+</html> 

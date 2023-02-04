@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>attribute-selector</title>
+        <style>
+             body{
+                 font-family: Arial, Helvetica, sans-serif;
+
+             }
+             p{
+                 font-size: 15px;
+                 line-height: 25px;
+             }
+             img[alt^='Image']{
+                 border: 3px solid red;
+             }
+             input[type='text']{
+                 border: 3px solid blue;
+             }
+        </style>
+    </head>
+    <body>
+        <h1>Hello world</h1>
+        <img src="images/cat.jpg" width="200px" alt="Image of cat">
+        <p>Lorem <a href="">ipsum dolor sit amet</a> consectetur, adipisicing elit. Voluptatibus est quod consequuntur sint, vero illo asperiores ratione ipsum quis corporis.</p>
+        <img src="images/flower.webp" width="200px" title="flower">
+        <br> <br>
+
+        Name <input type="text"> <br> <br>
+        <label>gender</label> <input type="radio" name="Gender" Id="male"/> <label for="male">male</label> <input type="radio" name="Gender" id="female"> <label for="female">Female</label> <input type="radio" name="Gender" Id="other"/> <label for="other">other</label><br> <br>
+        Address <input type="text"> 
+    </body>
+</html>

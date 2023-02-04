@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>tag template</title>
+    </head>
+    <body>
+        <script>  
+    //  There are 5 movies tickets Each Rs 200 and if you buy
+    //   5 tickets get discout Rs. 50 Each
+    //   There are 5 movies tickets Each Rs 200 and if you
+    //   buy less than 5 tickets get discount Rs. 0 Each
+     var noofticket = 5;
+     var buyticket = 5;
+     var eachprice = 200;
+     var disprice = 50; 
+     function ticket(theory, nticket, eprice, bprice, dprice){
+            return theory[2];
+     }
+     document.write(ticket`There are ${noofticket} movie tickets Each Rs ${eachprice} and if you buy ${buyticket} tickets get discount Rs. ${disprice} Each`)
+</script>
+    </body>
+</html>
+ 

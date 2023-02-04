@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>one super and two subclasses</title>
+    </head>
+    <body>
+        <script>  
+            // super class
+        var Mobile = function(){
+
+        }
+
+        //prototype method
+        Mobile.prototype.getModel = function() {return this.model;}
+
+            // sub class
+        var samsung = function(model, price){
+            this.model = model;
+            this.price = price;
+        }
+         
+            // sub class
+        var lenovo = function(model){
+            this.model = model;
+        }
+         
+        // Inheritance
+        samsung.prototype = Object.create(Mobile.prototype);
+        samsung.prototype.constructor = samsung;
+        lenovo.prototype = Object.create(Mobile.prototype);
+        lenovo.prototype.constructor = lenovo;
+
+        var Galaxy = new samsung ("Galaxy", 3000);
+        var phab2  = new lenovo ("phab 2");
+        console.log(Galaxy.getModel());
+        console.log(phab2.getModel());
+
+
+        </script>
+    </body>
+</html>

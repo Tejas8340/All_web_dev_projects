@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+<style>
+        #wrapper{
+            
+                background: white;
+                width: 1000px;
+                margin: 0 auto;
+            }
+        #header{
+            background: #87CEEB;
+           
+        }
+         #header h1{
+            margin: 30px 0 0 20px;
+        }
+    .main{
+        /* border: 1px solid red; */
+        height: auto;
+        width: 50%;
+        display: flex;
+        margin: auto;
+        
+    }
+    .main div{
+        width: 100%;
+        /* border: 1px solid blue; */
+        margin-top: 15px;
+    }
+    
+    
+</style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1 align="center"><i class="fa-brands fa-apple"></i>Credit Form</h1>
+        </div>
+    <div class="main">
+        <div>
+            <input type="text" placeholder="Account Holder Name" style="width: 90%;height: 30px; " required>
+            
+        </div>
+        <div>
+            <input type="Number" placeholder="Account No." style="width: 90%;height: 30px;" required>
+        </div>
+    </div>
+    <div class="main">
+        <div>
+            <input type="Number" placeholder="Credit Amount" style="width: 90%; height: 30px; " required>
+        </div>
+        <div>
+            <input type="text" placeholder="Particulars" style="width: 90%;height: 30px; " required>
+        </div>
+    </div>
+    <div class="main">
+        <div>
+            <input type="text" placeholder="Signature" style="width: 90%;height: 100px; " required>
+        </div>
+        <div>
+            <input type="Date" placeholder="Date" style="width: 90%;height: 30px; " required>
+        </div>
+    </div>
+    <div class="main">
+        <div>
+            <input style="background-color: green;" type="submit" placeholder="Success" value="success" style="width: 10%;height: 30px; " required>
+        </div>
+   
+</body>
+</html>

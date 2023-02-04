@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>display mode</title>
+        <style>
+           body{
+               font-family: Arial, Helvetica, sans-serif;
+           }
+           @media (display-mode :fullscreen){
+                   h1{
+                       color: red;
+                   }
+           }
+           @media (display-mode  :browser){
+            h1{
+                       color: orange;
+                   }
+            }
+            @media (display-mode  :minimal-ui){
+                h1{
+                       color: pink;
+                   }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello World</h1>
+    </body>
+</html>

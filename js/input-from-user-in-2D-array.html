@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Get input from user in 2D array</title>
+    </head>
+    <body>
+        <script>  
+         // Defining 2D array
+         var rows = 3;
+         var cols = 2;
+         var stu = new Array (rows);
+         for (var i = 0; i < rows; i++){
+            stu[i] = new Array(cols);
+         }
+
+         //input for Array
+          for(var i = 0; i < rows; i++){
+            for (var j = 0; j < cols; j++){
+                stu[i][j] = prompt("Enter Name: ");
+            }
+          }
+
+          // Displaying Value 
+           for (var i = 0; i < rows; i++){
+            for(var j = 0; j < cols; j++){
+                document.write(i + "" + j + stu[i][j] + "");
+            }
+            document.write("<br>");
+           }
+        </script>
+    </body>
+</html>
